@@ -9,7 +9,7 @@ Student: Michael De Paula
 </p>
 
 
-This repository is a portfolio analysis in which we are analyzing seven separate portfolios and comparing to the [S&P 500](https://www.google.com/finance/quote/.INX:INDEXSP). 
+This repository is a portfolio analysis in which we are analyzing seven separate portfolios and comparing to the [S&P 500](https://www.google.com/finance/quote/.INX:INDEXSP). At the end of the analysis we will be comparing a custom created portfolio with the [S&P 60 TSX](https://www.google.com/finance/quote/TX60:INDEXTSI?sa=X&ved=2ahUKEwiLtOnyhL3sAhXDVt8KHTUmDQcQ_AUoAXoECA4QAw). 
 
 The analysis begins by first reading several csv files which contain stock data pulled from Google Finance via the (=GOOGLEFINANCE) sheets formula. 
 Once the data is pulled in CSV file format it is cleaned of null values and indexed by Date. 
@@ -17,6 +17,7 @@ The cleaning and indexing will allow for us to concat the separate data into one
 The analysis begins with simple daily return calculations and eventually we move on to the following:
 
 All calculations and plots are done using pandas data-frame manipulation.
+Using the below codes and calculation we will also answer several return and performance questions necessary to build a quality, low risk/high return portfolio.
 
 - Daily Portfolio Returns plotting.
 - Cumulative returns calculation and plotting.
@@ -39,7 +40,7 @@ After this initial analysis is complete, we will create a custom portfolio of th
 
 Once each file is read, cleaned and indexed we will combine (concat) into a single data-frame using pandas. We will follow the exact analysis previously done above, however, there is a difference in which we will be calculating the weighted returns for each stock in the custom portfolio assuming an equal number of shares for each stock. 
 
-Once the above analysis is completed we will combine our custom portfolio to the previously originally combined portfolios and compare risk, statistics, Sharpe Ratios and eventually plot our BETA for the custom portfolio compared to the S&P 500. 
+Once the above analysis is completed we will combine our custom portfolio to the previously originally combined portfolios and compare risk, statistics, Sharpe Ratios and eventually plot our BETA for the custom portfolio compared to the S&P 60 TSX. 
 
 All data used for the analysis is contained in a folder named Data within the repository.
 
